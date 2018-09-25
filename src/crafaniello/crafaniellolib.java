@@ -12,10 +12,10 @@ public class crafaniellolib {
      * @param str1 String input that the function decides whether it is a palindrome or not
      * @return true if str1 is a palindrome(spelled same way forwards or backwards), and false otherwise
      */
-    public static Boolean isPalindrome(String str1) {
+     public static Boolean isPalindrome(String str1) {
         String newStr = "";
-        for (int i = str1.length(); i >= 0; i-- ) {
-            String addedString = str1.substring(i);
+        for (int i = str1.length() - 1; i >= 0; i-- ) {
+            String addedString = str1.substring(i, i - 1);
             newStr = newStr + addedString;
         }
         if (str1 == newStr){
