@@ -16,7 +16,7 @@ public class testfile {
     public static void main(String[] args) {
         multiplicationTable(3,5);
         fooBarBaz(15);
-        System.out.println(isPalindrome( "bob"));
+        System.out.println(isPalindrome( "bobo"));
         System.out.println(sumUpTo( 4));
         System.out.println(dateString("07-22-2018"));
     }

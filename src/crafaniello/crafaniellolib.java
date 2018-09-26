@@ -14,11 +14,14 @@ public class crafaniellolib {
      */
      public static Boolean isPalindrome(String str1) {
         String newStr = "";
-        for (int i = str1.length() - 1; i >= 0; i-- ) {
-            String addedString = str1.substring(i, i - 1);
+        String addedString = "";
+        for (int i = str1.length(); i >= 1; i-- ) {
+            addedString = str1.substring(i- 1, i);
             newStr = newStr + addedString;
+
+
         }
-        if (str1 == newStr){
+        if (str1.equals(newStr)){
             return true;
         }
         else {
